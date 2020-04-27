@@ -1,0 +1,360 @@
+/* ====================================================
+  Template Name: WordPress Fair HTML5 landing page
+  Template URI: http://dreamroadtech.com/templates/morix-preview/
+  Description: WordPress Fair HTML5 landing page
+  Author: Abc It Park
+  Author URI: http://www.abcitpark.com
+  version: 1.0
+==================================================== */
+
+
+/* CSS Index
+------------------------------------
+
+01. Template Default CSS 
+02. header css
+
+
+
+
+
+
+*/
+
+
+/* ====================================================
+  Google Fonts
+==================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700|Rubik:300,400,500,700&display=swap');
+
+/* ..................................
+ 01. Template Default CSS 
+.................................. */
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 14px;
+}
+
+a,
+.button {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.btn:focus {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+p {
+    line-height: 32px;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+li a {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    color: inherit;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.form-control:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+
+/* ====================================================
+   Author's custom styles
+   ==================================================== */
+
+
+/* ..................................
+ 02. header css 
+.................................. */
+
+.navbar ul li a {
+    font-size: 18px;
+    line-height: 27px;
+    margin-right: 10px;
+}
+
+button.btn {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 10px 20px;
+    font-weight: 400;
+}
+
+
+/* ..................................
+ 01. home CSS 
+.................................. */
+
+.pd-tp {
+    padding-top: 120px;
+}
+
+.pd-bm {
+    padding-bottom: 120px;
+}
+
+.home {
+    background-image: url('../img/bg-image-26.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 550px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.home::before {
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: linear-gradient(rgba(8, 8, 8, 0.66), rgba(3, 6, 28, 0.46));
+    z-index: -1;
+}
+
+.home-ctn h1 {
+    background: linear-gradient(145deg, #f81f01 0%, #ee076e 100%);
+    font-size: 120px;
+    line-height: 120px;
+    text-transform: uppercase;
+    font-weight: 800;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home-ctn p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #c6c9d8;
+}
+
+.home-ctn .ctc-btn {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 400;
+    padding: 10px 40px;
+}
+
+
+/* ..................................
+ 02. service section CSS 
+.................................. */
+
+.service-item {
+    background: #f6f6f6;
+    padding: 60px 60px 60px 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.service-item:hover {
+    background: linear-gradient(145deg, #f81f01 0%, #ee076e 100%);
+    color: #fff;
+    transition: .5s;
+    transform: translateY(-10px);
+}
+
+.service-item:hover.service-item i {
+    color: #fff;
+}
+
+.service-item i {
+    font-size: 54px;
+    line-height: 93px;
+    color: #f9004d;
+}
+
+.service-item h3 {
+    font-size: 23px;
+    line-height: 34px;
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+.service-item p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+/* ..................................
+ 03. about section CSS 
+.................................. */
+
+.about {
+    background: #f6f6f6;
+}
+
+.about-img {
+    background-image: url('../img/about-3.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.about-sec-ctn {
+    padding: 130px 0;
+}
+
+.about-ctn h2 {
+    font-size: 60px;
+    line-height: 84px;
+    font-weight: 700;
+    color: #1f1f25;
+}
+
+.about-ctn p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #717173;
+    font-weight: 300;
+}
+
+.about-item h3 {
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 500;
+    color: #1f1f25;
+}
+
+.about-item p {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+
+/* ..................................
+ 04. portfolio section CSS 
+.................................. */
+
+.portfolio h2 {
+    font-size: 60px;
+    line-height: 84px;
+    font-weight: 700;
+    color: #1f1f25;
+}
+
+.portfolio p {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.portfolio-item {
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.item-1 {
+    background-image: url('../img/portfolio-1.jpg');
+}
+
+.item-2 {
+    background-image: url('../img/portfolio-2.jpg');
+}
+
+.item-3 {
+    background-image: url('../img/portfolio-3.jpg');
+}
+
+.portfolio-item-ctn {
+    padding: 35px;
+    color: #fff;
+}
+
+.portfolio-item-ctn p {
+    color: #c6c9d8;
+    margin-bottom: 10px;
+}
+
+.portfolio-item-ctn h4 {
+    font-size: 22px;
+    line-height: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.portfolio-btn {
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.3);
+    background: transparent;
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 500;
+    padding: 2px 20px;
+    border-radius: 5px;
+}
+
+.portfolio-item:hover {
+    background-image: linear-gradient(#f6004c 10%, #000000 100%);
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+
+/* ..................................
+ 01. footer CSS 
+.................................. */
